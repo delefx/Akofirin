@@ -6,7 +6,7 @@ const fadeUp = {
   show: { opacity: 1, y: 0 },
 };
 
-export default function History() {
+export default function Akofirin2026() {
   return (
     <main className="bg-[#fbfaf7]">
       {/* HERO */}
@@ -20,7 +20,7 @@ export default function History() {
               transition={{ duration: 0.7 }}
               className="text-sm font-semibold tracking-wide text-[#2f5d3a]"
             >
-              FESTIVAL HISTORY
+              AKOFIRIN 2026
             </motion.p>
 
             <motion.h1
@@ -30,7 +30,7 @@ export default function History() {
               transition={{ duration: 0.8, delay: 0.08 }}
               className="mt-3 text-4xl md:text-5xl font-bold leading-tight text-gray-900"
             >
-              The Akofirin journey: 2018 and beyond
+              Planning, partnerships, and a renewed vision
             </motion.h1>
 
             <motion.p
@@ -40,9 +40,9 @@ export default function History() {
               transition={{ duration: 0.8, delay: 0.18 }}
               className="mt-5 text-lg text-gray-700 leading-relaxed max-w-xl"
             >
-              The maiden edition of Akofirin Cultural Festival held on 28 December 2018 in
-              Oke-Offin, bringing together cultural troupes, community leaders, and guests for
-              a dignified celebration of heritage, unity, and tourism potential.
+              Akofirin Cultural Festival returns in 2026 with a structured plan to enhance
+              visitor experience, strengthen cultural preservation, and support heritage tourism
+              in Oke-Offin and the wider Okun community.
             </motion.p>
 
             <motion.div
@@ -53,27 +53,36 @@ export default function History() {
               className="mt-7 flex flex-wrap gap-4"
             >
               <Link
-                to="/about"
+                to="/contact"
                 className="px-7 py-3 rounded-full bg-[#2f5d3a] text-white font-medium hover:opacity-95 transition"
               >
-                About Akofirin
+                Partner / Sponsor
               </Link>
+
               <Link
-                to="/2026"
+                to="/history"
                 className="px-7 py-3 rounded-full border border-[#2f5d3a] text-[#2f5d3a] font-medium hover:bg-[#2f5d3a]/10 transition"
               >
-                Akofirin 2026 Vision
+                See 2018 Recap
               </Link>
             </motion.div>
 
             <div className="mt-10 grid grid-cols-3 gap-4 max-w-md text-sm">
-              <Stat label="Maiden Edition" value="2018" />
-              <Stat label="Attendance" value="2,000+" />
-              <Stat label="Location" value="Oke-Offin" />
+              <Stat label="Edition" value="2026" />
+              <Stat label="Focus" value="Tourism" />
+              <Stat label="Theme" value="Heritage" />
+            </div>
+
+            <div className="mt-7 rounded-3xl bg-white/70 backdrop-blur border border-black/5 p-5">
+              <p className="text-sm font-semibold text-gray-900">Important note</p>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">
+                Items and timelines on this page are presented as plans and proposals,
+                subject to confirmation by the organizing committee.
+              </p>
             </div>
           </div>
 
-          {/* Hero image slot */}
+          {/* Image slot */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -81,13 +90,13 @@ export default function History() {
             className="rounded-3xl overflow-hidden shadow-lg border border-black/5 bg-white"
           >
             <div className="h-[340px] md:h-[420px] bg-gradient-to-br from-black/10 via-black/0 to-black/10 flex items-center justify-center text-gray-600">
-              2018 Festival / Community Image
+              Planning / Community Image
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* 2018 RECAP */}
+      {/* PLANNING PILLARS */}
       <Section>
         <motion.h2
           initial="hidden"
@@ -97,32 +106,42 @@ export default function History() {
           transition={{ duration: 0.7 }}
           className="text-3xl md:text-4xl font-bold text-gray-900"
         >
-          Akofirin 2018 Recap
+          Key planning pillars
         </motion.h2>
-
         <p className="mt-3 text-gray-700 max-w-3xl leading-relaxed">
-          The 2018 edition brought dignitaries and cultural troupes together in Oke-Offin. The
-          programme featured cultural performances, local cuisine and traditional attire (Adofi),
-          and a memorable focus on indigenous drumming and community prayers for peace and prosperity.
+          Our approach for 2026 focuses on infrastructure readiness, visitor comfort, cultural excellence,
+          and credible partnerships—positioning Akofirin as a destination-worthy cultural experience.
         </p>
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card
-            title="Date & Venue"
-            text="Held on 28 December 2018 in Oke-Offin, Bunu District, Kogi State."
+            title="Digital presence"
+            text="A dedicated website and global media visibility to improve awareness and coordination."
           />
           <Card
-            title="Attendance"
-            text="Well attended with over 2,000 participants across Nigeria."
+            title="Venue readiness"
+            text="Stage setup, improved access planning, and a structured layout for performances and exhibitions."
           />
           <Card
-            title="Highlights"
-            text="Cultural performances, cuisine exhibition, and indigenous music/drumming experience."
+            title="Visitor comfort"
+            text="Conveniences, water supply considerations, and guest-friendly arrangements."
+          />
+          <Card
+            title="Safety & security"
+            text="A secure, well-coordinated environment for tourists, guests, and community members."
+          />
+          <Card
+            title="Cultural quality"
+            text="Costume, curation, and refined programming to deliver a dignified cultural showcase."
+          />
+          <Card
+            title="Partnerships"
+            text="Engagement with institutions, corporate sponsors, and friends of Oke-Offin."
           />
         </div>
       </Section>
 
-      {/* KEY MOMENTS */}
+      {/* PROPOSED ACTIVITIES */}
       <Section className="bg-white border-y border-black/5">
         <div className="grid lg:grid-cols-3 gap-8 items-start">
           <motion.div
@@ -133,117 +152,117 @@ export default function History() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-1"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Key moments</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Proposed activities
+            </h2>
             <p className="mt-4 text-gray-700 leading-relaxed">
-              Akofirin 2018 was both cultural and community-focused—bringing together tradition,
-              hospitality, and a visitor-friendly atmosphere in a natural setting.
+              The festival programme is being structured to combine culture and tourism-friendly experiences,
+              including sports and community activities.
             </p>
 
             <div className="mt-6 rounded-3xl bg-[#fbfaf7] border border-black/5 p-6">
-              <p className="text-sm font-semibold text-gray-900">Tone A note</p>
+              <p className="text-sm font-semibold text-gray-900">Event planning note</p>
               <p className="mt-2 text-sm text-gray-700 leading-relaxed">
-                We present heritage respectfully: culture, history, tourism, unity, and community
-                pride—without sensational wording.
+                Final schedules, routes and participation guidelines will be published on confirmation.
               </p>
             </div>
           </motion.div>
 
           <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
             <InfoTile
-              title="Cultural performances"
-              text="Performing troupes welcomed from across Bunuland and beyond."
+              title="Day 1 (Proposed)"
+              text="Biking / Racing activities and community games."
             />
             <InfoTile
-              title="Cuisine & attire"
-              text="Local dishes showcased alongside traditional Bunu attire (Adofi)."
+              title="Day 2 (Proposed)"
+              text="Cultural performances and heritage showcases (building on the 2018 format)."
             />
             <InfoTile
-              title="Community prayers"
-              text="Traditional supplications for peace and prosperity in Oke-Offin, Okunland, Kogi, and Nigeria."
+              title="Marathon concept"
+              text="A marathon/race concept is being explored to strengthen tourism visibility."
             />
             <InfoTile
-              title="Visitor experience"
-              text="Relaxing natural scenery, local trade, and a community hub atmosphere."
+              title="Benchmarking"
+              text="A learning visit to study best practices from other major events is proposed."
             />
           </div>
         </div>
       </Section>
 
-      {/* DIGNITARIES (optional section) */}
+      {/* SPONSORSHIP & STAKEHOLDERS */}
       <Section>
         <div className="flex items-end justify-between gap-6 flex-wrap">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Guests & traditional institutions
+              Stakeholders & partnerships
             </h2>
             <p className="mt-3 text-gray-700 max-w-3xl leading-relaxed">
-              The maiden edition received support from respected leaders and traditional institutions.
-              (We can shorten this list later for a cleaner public-facing page.)
+              Akofirin 2026 is planned as a collaborative effort involving traditional institutions,
+              community leadership, government support, and corporate partnerships.
             </p>
           </div>
 
-          <div className="text-sm">
-            <span className="inline-block rounded-full bg-white border border-black/5 px-4 py-2 text-gray-700">
-              Curated for public credibility
-            </span>
-          </div>
+          <Link
+            to="/contact"
+            className="text-[#2f5d3a] font-semibold hover:underline"
+          >
+            Become a partner →
+          </Link>
         </div>
 
         <div className="mt-10 grid lg:grid-cols-2 gap-6">
           <ListCard
-            title="Chairmanship & Royal Father"
+            title="People & institutions to engage (selected)"
             items={[
-              "Chairman: Prof. Olu Obafemi",
-              "Royal Father of the day: HRM Oba James Adebayo Ikusemoro (Olubunu of Bunuland)",
+              "Traditional rulers across Okun land",
+              "Community leadership and friends of Oke-Offin",
+              "Cultural stakeholders and heritage advocates",
             ]}
           />
           <ListCard
-            title="Traditional rulers present (selected)"
+            title="Sponsorship outreach (selected)"
             items={[
-              "Obaro of Kabba (Royal Ambassador, 2018)",
-              "Olujumu of Ijumu",
-              "Obadofin of Oweland",
-              "Obajemu of Oweland",
-              "Other chiefs across Okun land",
+              "Corporate sponsors and foundations",
+              "State and Local Government partners across Okunland",
+              "Private sector supporters (CSR and tourism development)",
             ]}
           />
         </div>
 
         <div className="mt-8 rounded-3xl bg-white border border-black/5 p-6">
-          <p className="font-semibold text-gray-900">Government presence</p>
+          <p className="font-semibold text-gray-900">Transparency note</p>
           <p className="mt-2 text-gray-700 leading-relaxed">
-            The Kogi State Government was represented at the 2018 edition by key officials.
+            Sponsorship and partnership announcements will be published only when formally confirmed.
           </p>
         </div>
       </Section>
 
-      {/* LOOKING FORWARD */}
+      {/* CTA */}
       <section className="bg-gradient-to-r from-[#6b4f1d] via-[#2f5d3a] to-[#1f3d2b]">
         <div className="max-w-7xl mx-auto px-6 py-14 text-white">
-          <h2 className="text-3xl md:text-4xl font-bold">Continuing the journey</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Support Akofirin 2026</h2>
           <p className="mt-3 text-white/85 max-w-2xl">
-            After the maiden edition, planning and assessment continued—with a renewed vision
-            for Akofirin 2026.
+            Partner with us to promote cultural heritage, community development, and tourism.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              to="/2026"
+              to="/contact"
               className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:opacity-95 transition"
             >
-              Akofirin 2026 Vision
+              Contact the Team
             </Link>
             <Link
               to="/gallery"
               className="px-8 py-3 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition"
             >
-              View Gallery
+              Explore Gallery
             </Link>
             <Link
-              to="/contact"
+              to="/about"
               className="px-8 py-3 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition"
             >
-              Contact
+              About Akofirin
             </Link>
           </div>
         </div>
@@ -252,7 +271,7 @@ export default function History() {
   );
 }
 
-/* ---------- UI Helpers ---------- */
+/* ---------- UI helpers ---------- */
 
 function Section({ children, className = "" }) {
   return (
